@@ -28,6 +28,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/etc/fstab.qcom
+TARGET_RECOVERY_DEVICE_DIRS :=$(DEVICE_PATH)/recovery
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-01-01
