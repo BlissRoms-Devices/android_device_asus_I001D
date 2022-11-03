@@ -7,13 +7,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
-=======
+
 Device configuration for Asus ROG Phone 2 / a.k.a I001D
 =========================================
 
 The Asus ROG Phone 2 (codenamed _"I001D"_) is a flagship gaming smartphone from Asus.
 
-It was announced in July 2019 and released in Septmeber 2019.
+It was announced in July 2019 and released in September 2019.
 
 ## Device specifications
 
