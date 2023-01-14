@@ -37,6 +37,10 @@
 #define AOD_FALSE "0"
 #define AOD_TRUE "1"
 
+#define FOD_DISABLE_PATH "/proc/driver/disable_fod"
+#define FOD_DISABLE_FALSE "0"
+#define FOD_DISABLE_TRUE "1"
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -103,11 +107,13 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
     mCmdQueue.push(CMD_FINGER_DOWN);
     mCmdQueue.push(CMD_LIGHT_AREA_STABLE);
+    android::base::WriteStringToFile(FOD_DISABLE_FALSE, FOD_DISABLE_PATH);
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
     mCmdQueue.push(CMD_FINGER_UP);
+    android::base::WriteStringToFile(FOD_DISABLE_TRUE, FOD_DISABLE_PATH);
     return Void();
 }
 
