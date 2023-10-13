@@ -8,13 +8,15 @@
 
 DEVICE_PATH := device/asus/I001D
 
+BUILD_BROKEN_CLANG_PROPERTY := true
+
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := WW_I001D,I001D
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/I001D_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/I001D
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
