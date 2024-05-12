@@ -14,7 +14,4 @@
     -->
     <integer name="config_udfpsHbmType">0</integer>
 
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">135</integer>
-
 </resources>
