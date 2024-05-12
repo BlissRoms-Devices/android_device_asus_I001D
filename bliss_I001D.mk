@@ -17,6 +17,9 @@ $(call inherit-product, device/asus/I001D/device.mk)
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# UDFPS Animations
+EXTRA_UDFPS_ANIMATIONS := true
+
 PRODUCT_DEVICE := I001D
 PRODUCT_NAME := bliss_I001D
 PRODUCT_BRAND := asus
