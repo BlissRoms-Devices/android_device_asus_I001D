@@ -50,6 +50,7 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio libraries
 vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/sound_trigger.primary.msmnile.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
@@ -65,6 +66,7 @@ vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/hw/audio.primary.msmnile.so
+vendor/lib64/hw/sound_trigger.primary.msmnile.so
 vendor/lib64/libadsprpc.so
 
 # Audio (FX modules)
@@ -396,6 +398,7 @@ vendor/lib/libarcsoft_hdr.so
 vendor/lib/libarcsoft_hdr_plus_raw.so
 vendor/lib/libarcsoft_low_light_shot.so
 vendor/lib/libarcsoft_nighthawk.so
+vendor/lib/libarcsoft_picselfie_algorithm.so
 vendor/lib/libarcsoft_piczoom.so
 vendor/lib/libarcsoft_rer.so
 vendor/lib/libarcsoft_super_night_raw.so
@@ -410,6 +413,7 @@ vendor/lib64/libarcsoft_hdr.so
 vendor/lib64/libarcsoft_hdr_plus_raw.so
 vendor/lib64/libarcsoft_low_light_shot.so
 vendor/lib64/libarcsoft_nighthawk.so
+vendor/lib64/libarcsoft_picselfie_algorithm.so
 vendor/lib64/libarcsoft_piczoom.so
 vendor/lib64/libarcsoft_rer.so
 vendor/lib64/libarcsoft_super_night_raw.so
@@ -893,6 +897,11 @@ vendor/firmware/ipa_uc.b02
 vendor/firmware/ipa_uc.elf
 vendor/firmware/ipa_uc.mdt
 
+# Misc
+vendor/lib/libsmwrapper.so
+vendor/lib/TrustedUI.so
+vendor/lib64/libTrustedUI.so
+
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
@@ -1002,6 +1011,25 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensors_list.txt
 vendor/etc/sensors/sensors_settings
 vendor/etc/sensors/sns_reg_config
+
+# StageFright Configs
+vendor/lib/libopus.so
+vendor/lib/libstagefright_flacdec.so
+vendor/lib/libvorbisidec.so
+vendor/lib/libstagefright_amrnb_common.so
+vendor/lib/libstagefright_soft_aacdec.so
+vendor/lib/libstagefright_soft_amrdec.so
+vendor/lib/libstagefright_soft_flacdec.so
+vendor/lib/libstagefright_soft_flacenc.so
+vendor/lib/libstagefright_soft_g711dec.so
+vendor/lib/libstagefright_soft_gsmdec.so
+vendor/lib/libstagefright_soft_mp3dec.so
+vendor/lib/libstagefright_soft_opusdec.so
+vendor/lib/libstagefright_soft_rawdec.so
+vendor/lib/libstagefright_soft_vorbisdec.so
+vendor/lib/libstagefright_soft_aacenc.so
+vendor/lib/libstagefright_soft_amrnbenc.so
+vendor/lib/libstagefright_soft_amrwbenc.so
 
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
